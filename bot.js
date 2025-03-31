@@ -1,15 +1,16 @@
-const { Telegraf } = require('telegraf');
-require('dotenv').config();
+    const { Telegraf } = require('telegraf');
+    require('dotenv').config();
 
-// Отримання токена з .env
-const bot = new Telegraf(process.env.BOT_TOKEN);
+    // Отримання токена з .env
+    const bot = new Telegraf(process.env.BOT_TOKEN);
 
-// Обробник повідомлень
-bot.on('text', (ctx) => {
-    ctx.reply('Hello!');
-});
+    // Обробник повідомлень
+    bot.on('text', (ctx) => {
+        ctx.reply('Hello!');
+    });
 
-// Запуск бота
-bot.launch();
+    // Запуск бота
+    bot.launch();
 
-console.log('Bot is running...');
+    console.log('Bot is running...');
+        
